@@ -1,0 +1,167 @@
+@font-face {
+   font-family: 'Nunito Sans';
+   src: url('../font/') format('woff2'),
+       url('../font/NunitoSans-ExtraBold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Nunito Sans';
+   src: url('../font/NunitoSans-SemiBold.woff') format('woff2'),
+       url('../font/NunitoSans-SemiBold.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Nunito Sans';
+   src: url('../font/NunitoSans-Light.woff2') format('woff2'),
+       url('../font/NunitoSans-Light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   font-family: 'Nunito Sans';
+}
+
+img{
+   max-width: 100%;
+}
+
+.container {
+   max-width: 1279px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.head {
+   background-color: #2B3844;
+}
+
+.head-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 23px;
+   padding-bottom: 24px;
+}
+
+.head-list-beg {
+   font-size: 24px;
+   color: #fff;
+   line-height: 33px;
+}
+
+.head-list-end { 
+   color: #fff;
+   font-size: 16px;
+}
+
+.main{
+   background-color: #202C36;
+   padding-top: 55px;
+}
+
+.card {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+
+}
+
+.card-item {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 67px;
+   list-style: none;
+   max-width: 264px;
+   background-color: #2B3844   ;
+   border-radius: 5px;
+   overflow-x: hidden ;
+
+}
+
+.item-head {
+   padding: 24px 0px 16px 24px;
+   color: #fff;
+   font-size: 18px;
+
+}
+
+.item-txt {
+   padding-bottom: 8px;
+   padding-left: 24px;
+   color: #fff;
+   margin-right: 50px;
+}
+
+.item-txt-last{
+   padding-left: 24px;
+   padding-bottom: 46px;
+   color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+   .container{
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+
+   .head-list-beg{
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 25px;
+   }
+
+   .head-list-end{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+   }
+
+   .main{
+      padding-top:40px;
+   }
+   
+}
+
+@media only screen and (max-width: 565px) {
+   .container{
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+
+   .head-list-beg{
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 20px;
+   }
+
+   .head-list-end{
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+   }
+
+   .main{
+      padding-top:32px;
+   }
+
+   .card-item{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+   }
+}
